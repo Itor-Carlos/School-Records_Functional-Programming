@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body-id" onload="carrega()">
+    
+    <center>
+        <div id="body-add">
+            <div class="form">
+            
+                <img src="images/120f0fe0-7a55-4cbe-b979-f1fc9080f759.png" alt="" class="image-ufs">
+        
+                <div class="subtitle">Cadastre uma nova matéria</div>
+        
+                <div class="text-input codigoMateria">
+        
+                    <input type="text" class="input" placeholder="" id="codigoMateria">
+                    <div class="espace"></div>
+                    <label for="código da matéria" class="placeholder">Código da matéria</label>
+        
+                </div>
+        
+                <div class="text-input periodo">
+        
+                    <input type="text" class="input" placeholder="" id="periodo">
+                    <div class="espace"></div>
+                    <label for="periodo" class="placeholder">Período</label>
+        
+                </div>
+        
+                <div class="text-input carga_horaria">
+        
+                    <input type="text" class="input" placeholder="" id="carga_horaria">
+                    <div class="espace"></div>
+                    <label for="carga horaria" class="placeholder">Carga horária</label>
+        
+                </div>
+        
+                <div class="text-input frequencia">
+        
+                    <input type="text" class="input" placeholder="" id="frequencia">
+                    <div class="espace"></div>
+                    <label for="Frequência" class="placeholder">Frequência(%)</label>
+        
+                </div>
+        
+                <div class="text-input nota">
+        
+                    <input type="text" class="input" placeholder="" id="nota">
+                    <div class="espace"></div>
+                    <label for="Nota" class="placeholder">Nota</label>
+        
+                </div>
+        
+                <button type="button" class="submit" onclick="createRow()">Cadastrar</button>
+                <button id="operacoes" class="submit" onclick="geraDados()">Dados Gerais</button>
+                
+        
+            </div>
+            
+            
+        </div>
+    </center>
+
+    <center class="tabelas">
+        <div id="tabela"></div>
+    </center>
+
+    <center>
+        <div id="tabelaDadosGerais"></div>
+    </center>
+
+    <center>
+        
+    </center>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" id="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Erro na validação dos dados</h2>
+          </div>
+    </div>
+
+    </div>
+    
+
+
+</div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
